@@ -1,6 +1,6 @@
-### Build a MERN (MongoDB | Express | ReactJS | Nodejs)
-| Topics          | Date                |
+### Membuat project MERN (MongoDB | Express | ReactJS | Nodejs)
+| Topik          | Waktu                |
 | -------         | -------------------:|
-| Set up Reactjs and Nodejs structure | April 2022 |
-| Deploy a MERN Stack App to Heroku | April 2022 |
-| Connect MongoDB Atlas to Heroku application | April 2022 |
+| Meembuat struktur Reactjs and Nodejs | April 2022 |
+| Deploy project MERN Stack ke Heroku | April 2022 |
+| Mengkoneksikan MongoDB Atlas ke aplikasi Heroku | April 2022 |
