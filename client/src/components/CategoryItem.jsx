@@ -5,7 +5,7 @@ import { mobile } from "../responsive";
 const Container = styled.div`
   flex: 1;
   margin: 3px;
-  height: 70vh;
+  height: 440px;
   position: relative;
 `;
 
@@ -13,7 +13,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  ${mobile({ height: "20vh" })}
+  ${mobile({ height: "125px" })}
 
 `;
 
@@ -31,6 +31,7 @@ const Info = styled.div`
 
 const Title = styled.h1`
     color: white;
+    font-weight: bold;
     margin-bottom: 20px;
     text-shadow: 2px 1px 1px black;
 `;

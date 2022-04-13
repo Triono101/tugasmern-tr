@@ -46,8 +46,8 @@ const Desc = styled.p`
 `;
 
 const Price = styled.span`
-  font-weight: 100;
-  font-size: 40px;
+  font-weight: bold;
+  font-size: 25px;
 `;
 
 const FilterContainer = styled.div`
@@ -110,12 +110,13 @@ const Amount = styled.span`
 `;
 
 const Button = styled.button`
-  padding: 15px;
-  border: 2px solid #1e90ff;
-  background-color: white;
+  padding: 6x;
+  border: 2px solid teal;
+  background-color: #1e90ff;
   cursor: pointer;
   font-weight: bold;
   border-radius: 10px;
+  margin-left: 25px;
 
   &:hover{
       background-color: #1e90ff;
@@ -174,7 +175,7 @@ const Product = () => {
         <InfoContainer>
           <Title>{product.title}</Title>
           <Desc>{product.desc}</Desc>
-          <Price>{formatRupiah(product.price)}</Price>
+          <Price>Harga : {formatRupiah(product.price)}</Price>
           <FilterContainer>
             <Filter>
               <FilterTitle>Warna</FilterTitle>
@@ -197,7 +198,9 @@ const Product = () => {
               <Amount>{quantity}</Amount>
               <Add onClick={() => handleQuantity("inc")} />
             </AmountContainer>
-            <Button onClick={() => handleClick} >MASUKKAN KERANJANG</Button>
+            <Button onClick={() => alert('Maaf untuk saat ini belum bisa melakukan transaksi - Error syntax 404')}
+            
+            >MASUKKAN KERANJANG</Button>
           </AddContainer>
         </InfoContainer>
       </Wrapper>

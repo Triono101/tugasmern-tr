@@ -21,18 +21,6 @@ app.use("/api/products", productRoute);
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
 
-if(process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, '/client/build')));
-
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-  });
-} else {
-  app.get("/", (req, res) => {
-    res.send("Api Running");
-  });
-}
-
-  app.listen(PORT, function(){
-    console.log(`Server is running on port ${PORT}`, app.settings.env);
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`)
   });

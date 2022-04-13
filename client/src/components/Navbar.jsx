@@ -1,10 +1,13 @@
 import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { useSelector } from "react-redux";
+import axios from "axios";
+import Product from "./Product";
 
 const Container = styled.div`
   height: 60px;
@@ -29,7 +32,6 @@ const Language = styled.span`
   font-size: 16px;
   font-weight: bold;
   color: dodgerblue;
-  cursor: pointer;
   ${mobile({ display: "none" })}
 `;
 
@@ -74,13 +76,14 @@ const MenuItem = styled.div`
 
 const Navbar = () => {
   const quantity = useSelector(state => state.cart.quantity);
+
   return (
     <Container>
       <Wrapper>
         <Left>
           <Language>IDN</Language>
           <SearchContainer>
-            <Input placeholder="Search" />
+            <Input placeholder="Search"/>
             <Search style={{ color: "dodgerblue", fontSize: 24 }} />
           </SearchContainer>
         </Left>

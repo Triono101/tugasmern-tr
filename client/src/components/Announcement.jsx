@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Announcement = () => {
-  return <Container>Promo Spesial - Free Ongkir Untuk Pembelian Diatas Rp 199.000</Container>;
+  return <Container>Promo Spesial - Free Ongkir Untuk Pembelian Diatas Rp 999.000</Container>;
 };
 
 export default Announcement;

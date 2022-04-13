@@ -3,7 +3,6 @@ import {
   Instagram,
   MailOutline,
   Phone,
-  Pinterest,
   Room,
   Telegram,
   Twitter,
@@ -25,7 +24,9 @@ const Left = styled.div`
   padding: 20px;
 `;
 
-const Logo = styled.h1``;
+const Logo = styled.h1`
+  font-weight: bold
+`;
 
 const Desc = styled.p`
   margin: 20px 0px;
@@ -56,18 +57,7 @@ const Center = styled.div`
 
 const Title = styled.h3`
   margin-bottom: 30px;
-`;
-
-const List = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-`;
-
-const ListItem = styled.li`
-  width: 50%;
-  margin-bottom: 10px;
+  font-weight: bold;
 `;
 
 const Right = styled.div`
@@ -84,6 +74,7 @@ const ContactItem = styled.div`
 `;
 
 const Payment = styled.img`
+    margin-top: 30px;
     width: 85%;
     height: 75px;
     cursor: pointer;
@@ -119,21 +110,7 @@ const Footer = () => {
           </SocialIcon>
         </SocialContainer>
       </Left>
-      <Center>
-        <Title style={{textAlign: "center"}}>Link Lainnya</Title>
-        <List style={{textAlign: "center"}}>
-        <ListItem style={{ paddingLeft: "100px", color: "dodgerblue", textDecoration: "none" }} > Semua Produk
-          </ListItem>
-          <ListItem style={{ paddingLeft: "100px", color: "dodgerblue", textDecoration: "none" }} > Sepatu dan Sandal
-          </ListItem>
-          <ListItem
-            style={{ paddingLeft: "100px", color: "dodgerblue", textDecoration: "none" }}> Jaket dan Outfit
-          </ListItem>
-          <ListItem
-            style={{ paddingLeft: "100px", color: "dodgerblue", textDecoration: "none" }} > Berbagai Jenis Tas
-          </ListItem>
-        </List>
-      </Center>
+      <Center></Center>
       <Right>
         <Title>Kontak Personal</Title>
         <ContactItem>
@@ -145,7 +122,7 @@ const Footer = () => {
         <ContactItem>
           <MailOutline style={{marginRight:"10px"}} /> shinsegae@test-shop.com
         </ContactItem>
-        <Payment src="https://manocodes.com/wp-content/uploads/2020/07/Semua-Logo-Pembayaran-Transparant-1024x222.png"/>
+        <Payment src="https://sundaweb.co.id/wp-content/uploads/2021/03/Semua-Logo-Pembayaran-Transparant-1024x222-1.png"/>
       </Right>
     </Container>
   );

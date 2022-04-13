@@ -120,11 +120,12 @@ const Summary = styled.div`
   border: 1px solid grey;
   border-radius: 10px;
   padding: 20px;
-  height: 50vh;
+  height: 320px;
 `;
 
-const SummaryTitle = styled.h1`
-  font-weight: 200;
+const SummaryTitle = styled.h2`
+  font-weight: bold;
+  text-align: center;
 `;
 
 const SummaryItem = styled.div`
@@ -183,10 +184,10 @@ const Cart = () => {
               <PriceDetail>
                 <ProductAmountContainer>
                   <Add />
-                  <ProductAmount>2</ProductAmount>
+                  <ProductAmount>1</ProductAmount>
                   <Remove />
                 </ProductAmountContainer>
-                <ProductPrice>Rp 400.000</ProductPrice>
+                <ProductPrice>Rp 200.000</ProductPrice>
               </PriceDetail>
             </Product>
             <Hr />
@@ -220,17 +221,21 @@ const Cart = () => {
             <SummaryTitle>JUMLAH PESANAN</SummaryTitle>
             <SummaryItem>
               <SummaryItemText>Subtotal</SummaryItemText>
-              <SummaryItemPrice>Rp 650.000</SummaryItemPrice>
+              <SummaryItemPrice>Rp 450.000</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Biaya Pengiriman</SummaryItemText>
-              <SummaryItemPrice>Rp 30.000</SummaryItemPrice>
+              <SummaryItemPrice>Rp 50.000</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem type="total">
               <SummaryItemText>Total</SummaryItemText>
-              <SummaryItemPrice>Rp 680.000</SummaryItemPrice>
+              <SummaryItemPrice>Rp 500.000</SummaryItemPrice>
             </SummaryItem>
-            <Button>CHECKOUT SEKARANG</Button>
+            <Button
+              onClick={() => {
+                if(!alert('Checkout Dibatalkan! Mohon maaf atas ketidaknyamanan anda - Syntax error 404'))
+                window.location.href= "/";
+              }} >CHECKOUT SEKARANG</Button>
           </Summary>
         </Bottom>
       </Wrapper>

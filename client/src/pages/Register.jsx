@@ -80,9 +80,9 @@ const Register = () => {
           <Input placeholder="Password" />
           <Input placeholder="Komfirmasi Password" />
           <Agreement>
-          Dengan mendaftar, Anda setuju dengan <b>Syarat, Ketentuan,</b> & <b>Kebijakan Privasi</b> kami
+          Dengan mendaftar, maka Anda setuju dengan <b>Syarat, Ketentuan,</b> & <b>Kebijakan Privasi</b> toko kami
           </Agreement>
-          <Button>Sign In</Button>
+          <Button onClick={() => alert('Maaf untuk sementara belum bisa melakukan registrasi - Syntax error 404')} >Sign In</Button>
         </Form>
       </Wrapper>
     </Container>
