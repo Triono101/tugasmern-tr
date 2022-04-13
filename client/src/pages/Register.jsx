@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Container = styled.div`
   width: 100vw;
@@ -71,7 +73,11 @@ const Register = () => {
         to="/"> SHINSEGAE </Link>
       </Logo>
       <Wrapper>
-        <Title>BUAT AKUN</Title>
+        <Title>
+          <FontAwesomeIcon icon={faUser} style={{
+            marginRight: '15px'
+          }} /> BUAT AKUN
+        </Title>
         <Form>
           <Input placeholder="Nama" />
           <Input placeholder="Nama Belakang" />

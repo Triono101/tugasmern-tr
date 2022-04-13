@@ -10,6 +10,8 @@ import { useEffect, useState } from "react";
 import { publicRequest } from "../requestMethod";
 import { addProduct } from "../redux/cartRedux";
 import { useDispatch } from "react-redux";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled.div``;
 
@@ -65,13 +67,13 @@ const Filter = styled.div`
 
 const FilterTitle = styled.span`
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 500;
 `;
 
 const FilterColor = styled.div`
   width: 20px;
   height: 20px;
-  border: 1px solid gray;
+  border: 1px solid grey;
   border-radius: 50%;
   background-color: ${(props) => props.color};
   margin: 0px 5px;
@@ -110,19 +112,14 @@ const Amount = styled.span`
 `;
 
 const Button = styled.button`
-  padding: 6x;
-  border: 2px solid teal;
+  border: 2px solid white;
   background-color: #1e90ff;
   cursor: pointer;
-  font-weight: bold;
+  font-family: garamond;
+  font-size: 25px;
+  font-weight: 500px;
   border-radius: 10px;
-  margin-left: 25px;
-
-  &:hover{
-      background-color: #1e90ff;
-      color: white;
-      border: 2px solid white;
-  }
+  color: white;
 `;
 
 const Product = () => {
@@ -198,9 +195,9 @@ const Product = () => {
               <Amount>{quantity}</Amount>
               <Add onClick={() => handleQuantity("inc")} />
             </AmountContainer>
-            <Button onClick={() => alert('Maaf untuk saat ini belum bisa melakukan transaksi - Error syntax 404')}
-            
-            >MASUKKAN KERANJANG</Button>
+            <Button onClick={() => alert('Maaf untuk saat ini belum bisa melakukan transaksi - Error syntax 404')} >
+              <FontAwesomeIcon icon={faCartArrowDown} /> <b>KERANJANG</b>
+            </Button>
           </AddContainer>
         </InfoContainer>
       </Wrapper>

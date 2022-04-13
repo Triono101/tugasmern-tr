@@ -1,5 +1,7 @@
 import { Button, Card, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const formatRupiah = (price) => {
   return new Intl.NumberFormat('id-ID',
@@ -37,7 +39,8 @@ const Product = ({ item }) => {
             <Card.Subtitle style={{     paddingBottom: 10 }}>
             <span>{formatRupiah(item.price)}</span>
             </Card.Subtitle>
-            <Button variant="primary" href={`/product/${item._id}`} > Selengkapnya
+            <Button variant="primary" href={`/product/${item._id}`} >
+              <FontAwesomeIcon icon={faCartArrowDown}  />
             </Button>
           </Card.Body>
         </Card>
