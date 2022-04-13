@@ -29,12 +29,18 @@ const Top = styled.div`
 
 const TopButton = styled.button`
   padding: 10px;
-  font-weight: 600;
+  font-weight: bold;
   cursor: pointer;
   border: none;
   background-color: dodgerblue;
-  color: white;
   border-radius: 5px;
+  border: 2px solid white;
+
+  &:hover{
+    background-color: #1e90ff;
+    color: white;
+    border: 2px solid white;
+}
 `;
 
 const Bottom = styled.div`
@@ -144,11 +150,16 @@ const Button = styled.button`
   width: 100%;
   padding: 10px;
   background-color: dodgerblue;
-  color: white;
-  font-weight: 600;
-  border: 1px solid white;
+  font-weight: bold;
+  border: 1px solid grey;
   border-radius: 5px;
   cursor: pointer;
+
+  &:hover{
+    background-color: #1e90ff;
+    color: white;
+    border: 2px solid white;
+}
 `;
 
 const Cart = () => {

@@ -36,7 +36,7 @@ const InputContainer = styled.div`
 `;
 
 const Input = styled.input`
-  border: 1px solid teal;
+  border: 1px solid #1d80e0;
   flex: 8;
   padding-left: 20px;
 `;
@@ -44,9 +44,13 @@ const Input = styled.input`
 const Button = styled.button`
   flex: 1;
   border: none;
-  background-color: teal;
+  background-color: #1d80e0;
   color: white;
   cursor: pointer;
+
+  &:hover{
+    background-color: #1e90ff;
+    color: white;
 `;
 
 const Newsletter = () => {
@@ -57,7 +61,8 @@ const Newsletter = () => {
       <InputContainer>
         <Input placeholder="Masukkan Email Anda ..." />
         <Button>
-          <Send />
+          <Send 
+            onClick={() => alert('MAAF! Untuk saat ini belum bisa menerima Email pembaruan - Syntax error 404')}/>
         </Button>
       </InputContainer>
     </Container>
