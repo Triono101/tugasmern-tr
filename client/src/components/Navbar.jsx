@@ -52,6 +52,7 @@ const Center = styled.div`
 `;
 
 const Logo = styled.h1`
+  font-size: 34px;
   font-weight: bold;
   ${mobile({ fontSize: "24px" })}
 `;
@@ -88,7 +89,7 @@ const Navbar = () => {
           <Logo>
             <Link
             style={{ color: "dodgerblue", textDecoration: "none" }}
-            to="/"> SHINSEGAE </Link>
+            to="/"> SHINSEGAE  - TUGAS MERN </Link>
           </Logo>
         </Center>
         <Right>
